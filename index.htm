@@ -1,0 +1,99 @@
+<!DOCTYPE html>
+<html lang="ru">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Анимации</title>
+  <link rel="stylesheet" href="style.css">
+  <style>
+    @font-face{
+        font-family: Buba ;
+src: url(ofont.ru_Buba.ttf);
+}
+  
+
+  .chemistry-img{
+      margin-right: 20px;
+  }
+  
+  *{
+  padding: 50px 0px;
+  }
+  .chemistry-tittle{
+      color:black;
+      text-align: center;
+      font-family: Buba;
+      src: url(ofont.ru_Buba.ttf);
+  }
+
+  .chemistry-text{
+      color: burlywood;
+      size: 50px;
+      background: white;
+    box-shadow: 0px 2px 40px 0px burlywood;
+    text-align: center;
+      font-family: 'Lucida Sans', 'Lucida Sans Regular', 'Lucida Grande', 'Lucida Sans Unicode', Geneva, Verdana, sans-serif;
+  }
+  .infa{
+      padding: 25px;
+      margin-top: 25px;
+      width: 25%;
+     
+      background: white;
+    box-shadow: 0px 2px 40px 0px burlywood;
+      text-align: center;
+      font-family:'Lucida Sans', 'Lucida Sans Regular', 'Lucida Grande', 'Lucida Sans Unicode', Geneva, Verdana, sans-serif ;
+  }
+     
+  .chemistry-ssilka{ 
+    color: burlywood;
+      size: 50px;
+      background: white;
+    box-shadow: 0px 2px 40px 0px burlywood;
+    text-align: center;
+      font-family: 'Lucida Sans', 'Lucida Sans Regular', 'Lucida Grande', 'Lucida Sans Unicode', Geneva, Verdana, sans-serif;
+}
+  .chemistry-tittle .chemistry-text{
+      margin-bottom: 10px;
+  margin-bottom: 10px;
+  text-align: center;
+}
+  
+  .infa:hover{
+      background: green;
+      color: black;
+      transition-duration: 2s;
+      transition-timing-function: ease-in-out;
+      transition-delay: 0.5s;
+      animation-iteration-count: 3 times;
+      -o-animation-direction: alternate-reverse;
+  }
+  @keyframes infa{
+   0%{
+   transform: scale(1);
+   }
+   50%{
+    transform: scale(1.5);
+   }
+    100%{
+        transform: scale: (2)
+        box-shadow: 2px 2px 10px 10px green
+    }
+    }
+ 
+     
+  </style>
+</head>
+<body>
+  <div class="infa">
+    <img class = "chemistry-img" width="200" height="180" src="химия1.webp"></img>
+    <div class="chemistry-baza">
+        <h2 class="chemistry-tittle">Химия - как наука</h2>
+        <div class="chemistry-text">Химия - наука о веществах, их строении, свойствах и взаимных превращениях.
+            Основу современной химии составляют атомно-молекулярная теория, теория строения атомов и молекул и фундаментальные законы природы — закон сохранения массы и энергии и периодический закон Д.И. Менделеева.
+            Современная химия очень тесно связана с другими науками и со всеми отраслями народного хозяйства. Многие разделы современной химии возникли на стыке наук.</div>
+        <a class="chemistry-ssilka" href="#Предмет химии • Химия, Вещества и их строение • Фоксфорд Учебник.html">Дополнительно</a>
+    </div>
+  </div>
+</body>
+</html>
